@@ -16,3 +16,4 @@ console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError 
 console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
 1647044344499	Marionette	INFO	Listening on port 37957
 1647044344599	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1647044731409	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error
