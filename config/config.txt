@@ -1,0 +1,14 @@
+[Browser]
+type: Firefox
+
+[User Agent]
+name: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36
+
+[Cookies]
+cookie:nsid=s%2; login_email=me@e.com id_token=23;
+
+[Website]
+url: https://www.google.com
+
+[Test Page]
+use: yes
