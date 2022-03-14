@@ -4,8 +4,7 @@ from .fgui import fexplore
 from .pcookie import pcookies
 def get():
     file = "../config/config.txt"
-    if [input("Choose folder (Y/n): ") == "Y"]:
-        file = fexplore()
+    file = fexplore()
     parser = SafeConfigParser()
     rparser = RawConfigParser()
     print(f"Opening '{file}'...'")
@@ -18,5 +17,9 @@ def get():
         "cookies": pcookies(str(rparser.get("Cookies", "cookie"))),
         "url": str(parser.get("Website", "url")),
         "test-page": str(parser.get("Test Page", "use")),
-        "path": str(file)
+        "path": str(file),
+        "proxy": {
+            "ip": str(parser.get("Proxy", "ip")),
+            "port": str(parser.get("Proxy", "port"))
+        }
     })
