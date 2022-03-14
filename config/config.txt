@@ -12,3 +12,7 @@ url: https://www.google.com
 
 [Test Page]
 use: yes
+
+[Proxy]
+ip:None
+port:None
