@@ -2,12 +2,14 @@
 from configparser import SafeConfigParser, RawConfigParser
 from .fgui import fexplore
 from .pcookie import pcookies
+from termcolor import colored
+
 def get():
     file = "../config/config.txt"
     file = fexplore()
     parser = SafeConfigParser()
     rparser = RawConfigParser()
-    print(f"Opening '{file}'...'")
+    print(colored(f"Opening '{file}'...'", "green", attrs=["bold"]))
     parser.read(file)
     rparser.read(file)
 

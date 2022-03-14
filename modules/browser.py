@@ -13,10 +13,7 @@ def start_firefox(gdata):
 def start_test_page(gdata):
     profile = make_profile(gdata["browser"])
     inject_user_agent(profile, gdata["browser"], gdata["user-agent"])
-    if gdata["proxy"]["ip"] == "None" or gdata["proxy"]["port"] == "None":
-        profile = stealthy(profile)
-    else:
-        profile = stealthy(profile, gdata["proxy"])
+    stealthy(profile)
 
     browser = make_browser(profile, gdata["browser"])
 

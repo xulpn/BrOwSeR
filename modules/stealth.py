@@ -6,7 +6,8 @@ def set_proxy(profile, proxy_ip, proxy_port):
     return profile
 
 def remove_detectable_prefs(profile):
-    profile.set_preference("dom.webdriver.enable", False)
+    profile.set_preference("window.navigator", "undefined")
+
     profile.set_preference("useAutomationExstension", False)
     profile.update_preferences()
     return profile;
